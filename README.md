@@ -1,2 +1,2 @@
 # coursera-web
-A test epor for HTML/CSS
+A test repo for HTML/CSS
