@@ -1,0 +1,108 @@
+
+* {
+	box-sizing: border-box;
+	margin : 0;
+	padding: 0;
+}
+
+#top-heading {
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 30px;	
+	color: #000000;
+	font-family: Helvetica;
+}
+
+.itemcontainer {
+	width: 33.33%;
+	float: left;
+	/*border : solid 2px green;*/ /*debug*/
+}
+
+.item {
+	border: 2px solid;
+	background-color: #A0A0A0;
+	margin-left : 10px;
+	margin-right: 10px;
+	position: relative;
+}
+
+.itemname {
+	text-align: center;
+	font-weight: bold;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	width: 30%;
+	font-family: Georgia,sans-serif;
+	float: right;	
+}
+
+#itemname1 {
+	background-color: pink;
+}
+
+#itemname2 {
+	background-color: green;
+}
+
+#itemname3 {
+	background-color: yellow;
+}
+
+.itemdesc {
+	background-color: #A0A0A0;
+	font-size: 85%;
+	clear : both;
+	margin-top: 10px;
+	padding : 10px;
+	font-family: Helvetica;
+}
+
+/*non floating footer is just to avoid collapsing of the container dive, 
+  having all other elements as floating*/
+
+.footer {
+	clear : both;
+}
+
+.row {
+	/*border : solid 5px red;*/ /*debug*/	
+	
+	margin-left: 10px;
+	margin-right: 10px;
+
+	/* below property lets the row div not to collapse when it contains all floating elements*/
+	/*overflow: hidden;*/
+}
+
+/*
+
+In the desktop view (992px and above), each of the 3 sections should take up equal amount of space on the screen. 
+As you make the browser window wider or narrower, each section should become wider or narrower. 
+(Hint: use percentages to define width and use the 'float' property. See Lecture 24). 
+
+In the tablet view (between 768px and 991px, inclusively), the first 2 sections should be in 
+the first row and be of equal size. The 3rd section should be in the second row and take up the entire row by itself. 
+For a visual reference of this view, see the tablet mockup illustration below.
+
+In the mobile view (equal to or less than 767px), each section should take up the entire row. 
+For a visual reference of this view, see the mobile mockup illustration below.
+
+*/
+
+@media(min-width: 768px) and (max-width: 991px) {
+	#itemcontainer1,#itemcontainer2 {
+		width: 50%;		
+	}
+	#itemcontainer3 {
+		margin-top: 10px;
+		width : 100%;
+	}
+}
+
+@media(max-width : 767px) {
+	.itemcontainer {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}

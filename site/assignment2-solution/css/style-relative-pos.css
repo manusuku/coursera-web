@@ -1,0 +1,72 @@
+
+* {
+	box-sizing: border-box;
+	margin : 0;
+	padding: 0;
+}
+
+#top-heading {
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 30px;	
+	color: #000000;
+	font-family: Helvetica;
+}
+
+.itemcontainer {
+	width: 33.33%;
+	float: left;
+	border : solid 2px green;
+}
+
+.item {
+	border: 2px solid;
+	background-color: grey;
+	margin-left : 10px;
+	position: relative;
+}
+
+.itemname {
+	text-align: center;
+	font-weight: bold;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;	
+	width: 100px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	font-family: Georgia,sans-serif;
+	/* floating can be used for position the header to right*/
+	/*float: right;*/	
+}
+
+#itemname1 {
+	background-color: pink;
+}
+
+#itemname2 {
+	background-color: green;
+}
+
+#itemname3 {
+	background-color: yellow;
+}
+
+.itemdesc {
+	background-color: grey;
+	/* Used with floating 'itemname' to flush this below itemname */
+	/*clear : both;*/
+	margin-top: 10px;
+	padding : 10px;
+	font-family: Helvetica;
+}
+
+.footer {
+	clear : both;
+}
+.row {
+	border : solid 5px red;
+	width: 100%;
+	/* below property lets the row div not to collapse when it contains all floating elements*/
+	/*overflow: hidden;*/
+}
